@@ -19,7 +19,7 @@ const routes = {
   // staging
   ["docker-staging." + CUSTOM_DOMAIN]: dockerHub,
 };
-
+const MODE="production"
 function routeByHosts(host) {
   if (host in routes) {
     return routes[host];
